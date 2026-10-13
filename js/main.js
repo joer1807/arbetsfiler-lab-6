@@ -27,4 +27,7 @@ errorElement.textContent = "";
 messageElement.textContent = "";
 recipeElement.innerHTML = "";
 
-
+if (search.length > 0) {
+    errorElement.textContent = "Ange en sökfras...";
+    return;
+    }
