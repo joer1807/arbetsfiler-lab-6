@@ -22,5 +22,5 @@ const error = document.getElementById("error");
 searchform.addEventListener('submit', function(event) {
     event.preventDefault(); //mellanslag
    
-    
+
 
