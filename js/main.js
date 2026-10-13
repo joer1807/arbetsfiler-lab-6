@@ -66,7 +66,7 @@ const firstRecipe = data.recipes[0];
     }); 
 
     //function för recepten 
-    function renderRecipe(recipe) {
+    function renderRecipe(recipe) { 
     // Skapa huvudelementet artikel
     const article = document.createElement('article');
 
