@@ -48,5 +48,13 @@ if (search.length > 0) {
         }
 //översätter json till html
         const data = await response.json();
-        
+  
+        if(!data.recipes.length) {
+            errorElement.textContent = "Inget recept hittades";
+            return;
+        }
+const firstRecipe = data.recipes[0];
+        //loopar igenom recepten
+        for (let i = 0; i < data.recipes.length; i++) {
+            const recipe = data.recipes[i];
 
