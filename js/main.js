@@ -53,7 +53,7 @@ if (search.length > 0) {
             errorElement.textContent = "Inget recept hittades";
             return;
         }
-const firstRecipe = data.recipes[0];
+const firstRecipe = data.recipes[0]; 
         //loopar igenom recepten
         for (let i = 0; i < data.recipes.length; i++) {
             const recipe = data.recipes[i];
@@ -72,7 +72,7 @@ const firstRecipe = data.recipes[0];
 
     const titel = document.createElement ('h3');
     titel.textcontent = recipe.name;
-    
+
 
 
     
