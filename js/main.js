@@ -39,26 +39,11 @@ if (search.length > 0) {
     //try catch
 
     try {
-        const response = await fetch (jsonUrl + search);
+        const response = await fetch ('https://dummyjson.com/recipes/search?q=' + encodeURIComponent(query)););
         const data = await response.json();
         
         //om det inte finns recept
-        if (data.length === 0) {
-            errorElement.textContent = "Inget recept hittades.";
-            return; 
-        } catch (error) {
-            errorElement.textContent = "Något gick fel, försök igen";
-            return; 
+        if (!response.ok) {
+            throw new Error('Not Found');
         }
-// en array från registeret. där det ska landa receptet
-
-        let firstRecipe = data[0];
-
-renderRecipe(firstRecipe); 
-
-} catch (error) {
-    errorElement.textContent = "Något gick fel, försök igen";
-    return; 
-});
-
-
+        
