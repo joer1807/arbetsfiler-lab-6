@@ -57,4 +57,6 @@ const firstRecipe = data.recipes[0];
         //loopar igenom recepten
         for (let i = 0; i < data.recipes.length; i++) {
             const recipe = data.recipes[i];
+        }
+        renderRecipe(firstRecipe); //till dom rendering av receptet
 
