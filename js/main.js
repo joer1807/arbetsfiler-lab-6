@@ -28,12 +28,14 @@ messageElement.textContent = "";
 recipeElement.innerHTML = "";
 
 //om fältet är tomt
+
 if (search.length > 0) {
     errorElement.textContent = "Ange en sökfras...";
     return; 
     } 
 
     //try catch
+
     try {
         const response = await fetch (jsonUrl + search);
         const data = await response.json();
@@ -41,5 +43,5 @@ if (search.length > 0) {
         //om det inte finns recept
         if (data.length === 0) {
             errorElement.textContent = "Inget recept hittades.";
-            return;
+            return; 
         }
