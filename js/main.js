@@ -29,5 +29,5 @@ recipeElement.innerHTML = "";
 
 if (search.length > 0) {
     errorElement.textContent = "Ange en sökfras...";
-    return;
+    return; 
     } 
