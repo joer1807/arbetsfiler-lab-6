@@ -44,4 +44,7 @@ if (search.length > 0) {
         if (data.length === 0) {
             errorElement.textContent = "Inget recept hittades.";
             return; 
+        } catch (error) {
+            errorElement.textContent = "Något gick fel.";
+            return; 
         }
