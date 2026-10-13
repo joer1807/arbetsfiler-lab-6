@@ -18,3 +18,6 @@ const message = document.getElementById("message");
 const recipe = document.getElementById("recipe");
 const error = document.getElementById("error");
 
+//lägg till en lyssnare på sidan
+
+
