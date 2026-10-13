@@ -18,8 +18,10 @@ const message = document.getElementById("message");
 const recipe = document.getElementById("recipe");
 const error = document.getElementById("error");
 
+const jsonUrl = "https://dummyjson.com/recipes/search?q=";
+
 //lägg till en lyssnare på sidan
-searchform.addEventListener('submit', function(event) {
+searchform.addEventListener('submit',async function(event) {
     event.preventDefault(); //sidan laddar om
    
 const search = searchInput.value.trim();  //mellanslag bort
@@ -30,7 +32,7 @@ recipeElement.innerHTML = "";
 //om fältet är tomt
 
 if (search.length > 0) {
-    errorElement.textContent = "Ange en sökfras...";
+    errorElement.textContent = 'Ange en sökfras för att söka';
     return; 
     } 
 
@@ -57,5 +59,6 @@ renderRecipe(firstRecipe);
 } catch (error) {
     errorElement.textContent = "Något gick fel, försök igen";
     return; 
-}
+});
+
 
