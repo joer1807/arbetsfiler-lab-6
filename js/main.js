@@ -20,7 +20,11 @@ const error = document.getElementById("error");
 
 //lägg till en lyssnare på sidan
 searchform.addEventListener('submit', function(event) {
-    event.preventDefault(); //mellanslag
+    event.preventDefault(); //sidan laddar om
    
+const search = searchInput.value.trim();  //mellanslag bort
+errorElement.textContent = "";
+messageElement.textContent = "";
+recipeElement.innerHTML = "";
 
 
