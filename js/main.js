@@ -36,7 +36,7 @@ if (search.length > 0) {
     return; 
     } 
 
-    //try catch
+    //try catch api anrop
 
     try {
         const response = await fetch ('https://dummyjson.com/recipes/search?q=' + encodeURIComponent(query)););
