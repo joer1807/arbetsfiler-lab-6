@@ -19,5 +19,8 @@ const recipe = document.getElementById("recipe");
 const error = document.getElementById("error");
 
 //lägg till en lyssnare på sidan
-
+searchform.addEventListener('submit', function(event) {
+    event.preventDefault(); //mellanslag
+   
+    
 
