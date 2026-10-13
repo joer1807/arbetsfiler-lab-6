@@ -60,3 +60,7 @@ const firstRecipe = data.recipes[0];
         }
         renderRecipe(firstRecipe); //till dom rendering av receptet
 
+    } catch (error) {
+        messageElement.textContent = 'Ett fel uppstod vid hämtningen. Försök igen senare.';
+        console.log(error);
+    }
