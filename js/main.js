@@ -52,7 +52,7 @@ if (search.length > 0) {
 
         let firstRecipe = data[0];
 
-renderRecipe(firstRecipe);
+renderRecipe(firstRecipe); 
 
 } catch (error) {
     errorElement.textContent = "Något gick fel, försök igen";
