@@ -32,5 +32,14 @@ if (search.length > 0) {
     errorElement.textContent = "Ange en sökfras...";
     return; 
     } 
-//api anrop
 
+    //try catch
+    try {
+        const response = await fetch (jsonUrl + search);
+        const data = await response.json();
+        
+        //om det inte finns recept
+        if (data.length === 0) {
+            errorElement.textContent = "Inget recept hittades.";
+            return;
+        }
