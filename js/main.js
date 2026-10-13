@@ -48,7 +48,14 @@ if (search.length > 0) {
             errorElement.textContent = "Något gick fel, försök igen";
             return; 
         }
-// en array från registeret. 
+// en array från registeret. där det ska landa receptet
 
         let firstRecipe = data[0];
+
+renderRecipe(firstRecipe);
+
+} catch (error) {
+    errorElement.textContent = "Något gick fel, försök igen";
+    return; 
+}
 
