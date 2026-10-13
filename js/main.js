@@ -46,4 +46,7 @@ if (search.length > 0) {
         if (!response.ok) {
             throw new Error('Not Found');
         }
+//översätter json till html
+        const data = await response.json();
         
+
