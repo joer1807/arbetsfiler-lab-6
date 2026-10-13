@@ -64,3 +64,13 @@ const firstRecipe = data.recipes[0];
         messageElement.textContent = 'Ett fel uppstod vid hämtningen. Försök igen senare.';
         console.log(error);
     }); 
+
+    //function för recepten 
+    function renderRecipe(recipe) {
+    // Skapa huvudelementet artikel
+    const article = document.createElement('article');
+
+    const titel = document.createElement ('h3');
+
+
+    
