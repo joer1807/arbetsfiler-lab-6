@@ -97,13 +97,6 @@ const firstRecipe = data.recipes[0];
 
          }
     
-    
-        // Skapa huvudelementet artikel
-    //const article = document.createElement('article');
-
-    //const titel = document.createElement ('h3');
-    //titel.textcontent = recipe.name;*/
-
 
 
     
