@@ -14,9 +14,9 @@
 const searchform = document.getElementById("searchform");
 const searchInput = document.getElementById("search");
 const searchButton = document.getElementById("searchbutton");
-const message = document.getElementById("message");
-const recipe = document.getElementById("recipe");
-const error = document.getElementById("error");
+const messageElement = document.getElementById("message");
+const recipeElement = document.getElementById("recipe");
+const errorElement = document.getElementById("error");
 
 const jsonUrl = "https://dummyjson.com/recipes/search?q=";
 
