@@ -72,6 +72,9 @@ const firstRecipe = data.recipes[0];
         ingredientsHTML + `<li>` + item.name + `</li>`;
         } 
 
+        //function för att lägga till ingredienser
+        
+
 
     
     
