@@ -29,6 +29,7 @@ errorElement.textContent = "";
 messageElement.textContent = "";
 recipeElement.innerHTML = ""; 
 
+
 //om fältet är tomt
 
 if (search.length === 0) {
