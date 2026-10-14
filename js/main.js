@@ -40,14 +40,13 @@ if (search.length > 0) {
 
     try {
         const response = await fetch ('https://dummyjson.com/recipes/search?q=' + encodeURIComponent(search));
-        const data = await response.json();
+        const data = await response.json();    //översätter json till html
         
         //om det inte finns recept
         if (!response.ok) {
             throw new Error('Not Found');
         }
-//översätter json till html
-        const data = await response.json();
+
   
         if(!data.recipes.length) {
             errorElement.textContent = "Inget recept hittades";
