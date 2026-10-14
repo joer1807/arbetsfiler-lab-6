@@ -39,7 +39,7 @@ if (search.length > 0) {
     //try catch api anrop
 
     try {
-        const response = await fetch ('https://dummyjson.com/recipes/search?q=' + encodeURIComponent(query);
+        const response = await fetch ('https://dummyjson.com/recipes/search?q=' + encodeURIComponent(search));
         const data = await response.json();
         
         //om det inte finns recept
