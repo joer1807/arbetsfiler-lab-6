@@ -73,17 +73,11 @@ const firstRecipe = data.recipes[0];
         }  
 
         //function för att lägga till ingredienser
-        let instrucHTML = "";
-            for (let i = 0; i < recipe.instructions.length; i++) {
-                let item = recipe.instructions[i];
-                instructionsHTML + `<li>` + item.text + `</li>`;
-                }
-//instruktion 
         let instructionsHTML = "";
             for (let i = 0; i < recipe.instructions.length; i++) {
                 let item = recipe.instructions[i];
-                instructionsHTML + `<li>` + item.text + `</li>`;
-                }
+                instructionsHTML = instructionsHTML +  `<li>` + item + `</li>`;
+                } 
         recipeElement.innerHTML = `
     <article> 
         <h3>` + recipe.name + `</h3>
