@@ -47,7 +47,7 @@ if (search.length === 0) {
             throw new Error('Not Found');
         }
 
-  
+  // om receptet inte finns i listan
         if(!data.recipes.length) {
             errorElement.textContent = "Inget recept hittades";
             return;
@@ -67,10 +67,11 @@ const firstRecipe = data.recipes[0];
     //function för recepten 
     function renderRecipe(recipe) { 
     let ingredientsHTML = "";
-    for let i = 0; i < recipe.ingredients.length; i++) {
+    for (let i = 0; i < recipe.ingredients.length; i++) {
         let item = recipe.ingredients[i];
         ingredientsHTML + `<li>` + item.name + `</li>`;
-        }
+        } 
+
 
     
     
