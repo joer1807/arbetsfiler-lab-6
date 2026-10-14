@@ -32,7 +32,7 @@ recipeElement.innerHTML = "";
 //om fältet är tomt
 
 if (search.length === 0) {
-    errorElement.textContent = 'Ange en sökfras för att söka';
+    errorElement.textContent = 'Ange en sökfras';
     return; 
     }  
 
@@ -49,7 +49,7 @@ if (search.length === 0) {
 
   // om receptet inte finns i listan
         if(!data.recipes.length) {
-            errorElement.textContent = "Inget recept hittades";
+            errorElement.textContent = "Inget recept hittades, prova en ny sökfras";
             return;
         }
 
