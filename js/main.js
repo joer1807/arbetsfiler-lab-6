@@ -25,19 +25,19 @@ searchform.addEventListener('submit',async function(event) {
     event.preventDefault(); //sidan laddar om
    
 const search = searchInput.value.trim();  //mellanslag bort
-errorElement.textContent = "";
+errorElement.textContent = "";   // tömmer fälten och ev feltext
 messageElement.textContent = "";
 recipeElement.innerHTML = ""; 
 
 
-//om fältet är tomt
+//om fältet är tomt kommer felmeddelandet att visas
 
 if (search.length === 0) {
     errorElement.textContent = 'Ange en sökfras';
     return; 
     }  
 
-    //try catch api anrop
+    //Nu kommrt vi till API-anrop
 
     try {
         const response = await fetch ('https://dummyjson.com/recipes/search?q=' + encodeURIComponent(search));
@@ -79,7 +79,7 @@ const firstRecipe = data.recipes[0];
                 let item = recipe.instructions[i];
                 instructionsHTML = instructionsHTML +  `<li>` + item + `</li>`;
                 } 
-        // nedan ska ändra på webbsidan för att visa receptet
+        // nedan ska ändra på webbsidan för att visa receptet och hämtat från HTML filen!
     recipeElement.innerHTML = 
     '<article>' + 
         '<h3>' + recipe.name + '</h3>' +
