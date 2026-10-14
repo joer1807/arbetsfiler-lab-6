@@ -66,7 +66,16 @@ const firstRecipe = data.recipes[0];
 
     //function för recepten 
     function renderRecipe(recipe) { 
-    // Skapa huvudelementet artikel
+    let ingredientsHTML = "";
+    for let i = 0; i < recipe.ingredients.length; i++) {
+        let item = recipe.ingredients[i];
+        ingredientsHTML + `<li>` + item.name + `</li>`;
+        }
+
+    
+    
+    
+        // Skapa huvudelementet artikel
     const article = document.createElement('article');
 
     const titel = document.createElement ('h3');
