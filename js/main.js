@@ -31,7 +31,7 @@ recipeElement.innerHTML = "";
 
 //om fältet är tomt
 
-if (search.length > 0) {
+if (search.length === 0) {
     errorElement.textContent = 'Ange en sökfras för att söka';
     return; 
     } 
