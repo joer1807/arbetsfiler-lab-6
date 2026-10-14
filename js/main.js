@@ -78,27 +78,22 @@ const firstRecipe = data.recipes[0];
                 let item = recipe.instructions[i];
                 instructionsHTML = instructionsHTML +  `<li>` + item + `</li>`;
                 } 
-        recipeElement.innerHTML = `
-    <article> 
-        <h3>` + recipe.name + `</h3>
-        <img src="` + recipe.image + `" alt="` + recipe.name + `">
-        <div class="recipe-info">
-            <p><strong>Servings:</strong> ` + recipe.servings + `</p>
-            <p><strong>Prep time:</strong> ` + recipe.prepTimeMinutes + ` minutes</p>
-            <p><strong>Cooking time:</strong> ` + recipe.cookTimeMinutes + ` minutes</p>
-            <p><strong>Difficulty:</strong> ` + recipe.difficulty + `</p>
-        </div>
-        <h4>Ingredients</h4>
-        <ul>
-            ` + ingredientsHTML + `
-        </ul>
-        <h4>Instructions</h4>
-        <ol>
-            ` + instructionsHTML + `
-        </ol>
-    </article> 
-`;
-
+        // nedan ska ändra på webbsidan för att visa receptet
+    recipeElement.innerHTML = 
+    '<article>' + 
+        '<h3>' + recipe.name + '</h3>' +
+        '<img src="' + recipe.image + '" alt="' + recipe.name + '">' +
+        '<div class="recipe-info">' +
+            '<p><strong>Servings:</strong> ' + recipe.servings + '</p>' +
+            '<p><strong>Prep time:</strong> ' + recipe.prepTimeMinutes + ' minutes</p>' +
+            '<p><strong>Cooking time:</strong> ' + recipe.cookTimeMinutes + ' minutes</p>' +
+            '<p><strong>Difficulty:</strong> ' + recipe.difficulty + '</p>' +
+        '</div>' +
+        '<h4>Ingredients</h4>' +
+        '<ul>' + ingredientsHTML + '</ul>' +
+        '<h4>Instructions</h4>' +
+        '<ol>' + instructionsHTML + '</ol>' +
+    '</article>';
 
     
     
