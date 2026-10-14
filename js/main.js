@@ -27,7 +27,7 @@ searchform.addEventListener('submit',async function(event) {
 const search = searchInput.value.trim();  //mellanslag bort
 errorElement.textContent = "";
 messageElement.textContent = "";
-recipeElement.innerHTML = "";
+recipeElement.innerHTML = ""; 
 
 //om fältet är tomt
 
