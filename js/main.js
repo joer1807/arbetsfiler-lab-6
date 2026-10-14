@@ -34,7 +34,7 @@ recipeElement.innerHTML = "";
 if (search.length === 0) {
     errorElement.textContent = 'Ange en sökfras för att söka';
     return; 
-    } 
+    }  
 
     //try catch api anrop
 
