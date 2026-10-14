@@ -70,7 +70,7 @@ const firstRecipe = data.recipes[0];
     for (let i = 0; i < recipe.ingredients.length; i++) {
         let item = recipe.ingredients[i];
         ingredientsHTML + `<li>` + item.name + `</li>`;
-        } 
+        }  
 
         //function för att lägga till ingredienser
         let instructionsHTML = "";
