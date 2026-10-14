@@ -78,16 +78,41 @@ const firstRecipe = data.recipes[0];
                 let item = recipe.instructions[i];
                 instructionsHTML + `<li>` + item.text + `</li>`;
                 }
+//instruktion 
+        let instructionsHTML = "";
+            for (let i = 0; i < recipe.instructions.length; i++) {
+                let item = recipe.instructions[i];
+                instructionsHTML + `<li>` + item.text + `</li>`;
+                }
+        recipeElement.innerHTML = `
+            <article> 
+                <h3>` + recipe.name + `</h3>
+                <img src="` + recipe.image + `" alt="` + recipe.name + `">
+                <div class="recipe-info">
+                    <p><strong>Servings:</strong> ` + recipe.servings + `</p>
+                    <p><strong>Prep time:</strong> ` + recipe.prepTime + `</p>
+                    <p><strong>Cooking time:</strong> ` + recipe.cookTime + `</p>
+                    <p><strong>Difficulty:</strong> ` + recipe.difficulty + `</p>
+                </div>
+                <h4>Ingredients</h4>
+                <ul>
+                    ` + ingredientsHTML + `
+                </ul>
+                <h4>Instructions</h4>
+                <ol>
+                    ` + instructionsHTML + `
+                </ol>
+            </article>
 
 
     
     
     
         // Skapa huvudelementet artikel
-    const article = document.createElement('article');
+    //const article = document.createElement('article');
 
-    const titel = document.createElement ('h3');
-    titel.textcontent = recipe.name;
+    //const titel = document.createElement ('h3');
+    //titel.textcontent = recipe.name;*/
 
 
 
