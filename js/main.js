@@ -39,7 +39,7 @@ if (search.length > 0) {
     //try catch api anrop
 
     try {
-        const response = await fetch ('https://dummyjson.com/recipes/search?q=' + encodeURIComponent(query)););
+        const response = await fetch ('https://dummyjson.com/recipes/search?q=' + encodeURIComponent(query);
         const data = await response.json();
         
         //om det inte finns recept
@@ -53,6 +53,8 @@ if (search.length > 0) {
             errorElement.textContent = "Inget recept hittades";
             return;
         }
+
+
 const firstRecipe = data.recipes[0]; 
         //loopar igenom recepten
         for (let i = 0; i < data.recipes.length; i++) {
