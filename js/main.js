@@ -96,7 +96,7 @@ const firstRecipe = data.recipes[0];
         '<ol>' + instructionsHTML + '</ol>' +
     '</article>';
 
-         }
+            }   
     
 
 
